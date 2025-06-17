@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  transition: background-color 1.5s ease, color 1.5s ease;
+}
+
+.app-container {
+  min-height: 200vh;
+  width: 100vw;
+  position: relative;
+  transition: background-color 1.5s ease, color 1.5s ease;
+}
+
+.sun-mode {
+  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+  color: #000;
+}
+
+.moon-mode {
+  background: linear-gradient(to bottom, #000000, #1a237e);
+  color: #ccc;
+}
+
+/* Clouds */
+.sky-clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cloud {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  opacity: 0.9;
+  filter: blur(4px);
+  animation: moveRight 120s linear infinite;
+  box-shadow: 0 0 30px #ffffffcc;
+}
+
+.cloud.small { width: 80px; height: 40px; }
+.cloud.mid   { width: 120px; height: 60px; }
+.cloud.big   { width: 160px; height: 80px; }
+
+@keyframes moveRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
+}
+
+.canvas-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-info {
+  position: absolute;
+  top: 20%;
+  left: 40px;
+  z-index: 10;
+  max-width: 400px;
+  font-size: 1.2rem;
+  animation: fadeIn 2s ease-out;
+}
+
+.hero-section {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.projects-section {
+  padding: 40px 20px;
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}

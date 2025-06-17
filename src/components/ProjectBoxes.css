@@ -1,0 +1,29 @@
+.project-section {
+  padding: 80px 40px;
+  background: #0D1117;
+  color: #fff;
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project-box {
+  background: #161B22;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+  transition: transform 0.3s;
+}
+
+.project-box:hover {
+  transform: translateY(-6px);
+}
