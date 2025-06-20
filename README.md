@@ -1,12 +1,77 @@
-# React + Vite
+# 🌐 Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A futuristic, animated personal portfolio built using React.js, showcasing skills in full-stack development, AI/ML, IoT, and embedded systems. It features dynamic themes, animated skill progress arcs, and a sleek glassmorphism UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ Built with React.js + JSX
+- 🎨 Animated circular skill indicators
+- 🌗 Theme toggle: Sun (Day Mode) / Moon (Night Mode)
+- 🧊 Glassmorphism card UI
+- 🎯 Skill-based animation scaling
+- 📱 Fully responsive for all screen sizes
+- 🔀 Modular, maintainable component structure
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Category            | Tools & Libraries                            |
+|---------------------|----------------------------------------------|
+| **Languages**        | C++, C, Python, Java, C#, JavaScript, Kotlin |
+| **Frontend**         | HTML5, CSS3, React.js, Bootstrap             |
+| **Backend**          | Node.js, Express.js, MongoDB, MySQL          |
+| **ML / AI**          | NumPy, Pandas, TensorFlow, Scikit-learn      |
+| **.NET Framework**   | ASP.NET, .NET Core, Entity Framework         |
+| **IoT / Embedded**   | Arduino, ESP32, Serial Comm, HTTP/MQTT       |
+| **Dev Tools**        | Git, GitHub, Docker, VS Code                 |
+
+---
+
+## 📁 Folder Structure
+
+portfolio/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ └── SkillCards.jsx
+│ ├── styles/
+│ │ └── skill.css
+│ ├── App.jsx
+│ └── index.js
+├── package.json
+└── README.md  
+
+---
+
+## 🖥️ Live Demo
+
+🔗 [View Portfolio](https://your-portfolio-link.com)  
+*(Replace with actual deployed link – Vercel, Netlify, etc.)*
+
+---
+
+## 🧠 Highlights
+
+- **Circular skill meters** animated per skill level
+- **Glass-style card UI** with hover effects
+- **Auto-scaling animation speed** (planned)
+- **Dynamic style variables** using `CSS :root`
+- **Separation of data and UI logic** via `categories` object
+
+---
+
+## 🖼️ Screenshots
+
+> *(Insert screenshots or screen recordings here of skill animations, light/dark theme toggle, etc.)*
+
+---
+
+## 🛠️ Setup Instructions
+
+```bash
+git clone https://github.com/mizansutar/portfolio.git
+cd portfolio
+npm install
+npm start
